@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0px;
+	font-family: 'Work Sans', sans-serif;
+}
+
+body {
+	display: flex;
+	background-color: #FFFFFF;
+	height: 100vh;
+}
+
+.ptFontStyle {
+	font-family: 'PT Sans', sans-serif;
+}
+
+.label {
+	display: block;
+	font-size: 12px;
+	line-height: 14px;
+	color: #7C7C7C;
+	margin-bottom: 4.6px;
+}
+
+.page {
+	display: flex;
+	margin: auto;
+	max-width: 665px;
+	min-height: 481px;
+	width: 100%;
+}
+
+.info {
+	position: relative;
+	max-width: 138px;
+	min-height: 481px;
+	width: 100%;
+	background-color: #5A61ED;
+}
+
+.info__title {
+	position: absolute;
+	width: 162px;
+	display: inline-block;
+	font-size: 49px;
+	line-height: 63px;
+	letter-spacing: 0.5px;
+	color: #FFFFFF;
+	transform: rotate(-90deg);
+	left: 20px;
+  bottom: 63px;
+}
+
+.registr-block {
+	display: flex;
+	width: 100%;
+}
+
+.registr-block__wrapper {
+	position: relative;
+	width: 485px;
+	height: 409px;
+	margin: auto;
+}
+
+.registr-block__title {
+	margin-bottom: 20px;
+}
+
+.title__main {
+	display: block;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 26px;
+	letter-spacing: -0.46px;
+	color: #111111;
+}
+
+
+.title__additional {
+	font-size: 14px;
+	line-height: 16px;
+	color: #111111;
+}
+
+.regist-block__content {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 13px;
+	grid-row-gap: 16px;
+}
+
+.birthday {
+	height: 23px;
+}
+
+.day {
+	width: 56px;
+}
+
+.month {
+	width: 91px;
+}
+
+.year {
+	width: 68px;
+}
+
+.radio {
+	appearance: none;
+	position: relative;
+}
+
+.radio::before {
+	display: inline-block;
+	content: " ";
+	width: 12px;
+	height: 12px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 0.7px solid #5A61ED ;
+	margin-top: 1px;
+}
+
+.radio:checked:after {
+	position: absolute;
+	display: inline-block;
+	content: " ";
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color:  #5A61ED ;
+	top: calc(50% - 10px/2);
+	left: 2.1px;
+}
+
+.registr-block__footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.submitBtn {
+	appearance: none;
+	width: 154px;
+	height: 32px;
+	font-size: 14px;
+	background-color: #5A61ED;
+	color: #FFFFFF;
+}

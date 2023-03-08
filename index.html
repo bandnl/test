@@ -3,10 +3,73 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./style/style.css">
-		<title>Registration</title>
+		<title>Sign up</title>
 	</head>
 	<body>
-
+		<main class="page">
+			<section class="page__info info">
+				<span class="info__title ptFontStyle">Sign up</span>
+			</section>
+			<section class="page__registr-block registr-block">
+				<div class="registr-block__wrapper">
+					<div class="registr-block__title title">
+						<span class="title__main bold">New user?</span>
+						<span class="title__additional">Use the form below to create your account.</span>
+					</div>
+					<div class="">
+						<form action="" class="regist-block__content">
+							<div>
+								<label for="first-name" class="label">First name</label>
+								<input type="text" id="first-name" placeholder="Input your first name">
+							</div>
+							<div>
+								<label for="last-name" class="label">Last name</label>
+								<input type="text" id="last-name" placeholder="Input your last name">
+							</div>
+							<div>
+								<label for="nation" class="label">Nationality</label>
+								<select name="nation" id="nation">
+									<option value="american">American</option>
+									<option value="bel">Belarus</option>
+									<option value="rus">Russian</option>
+									<option value="ukr">Ukranian</option>
+								</select>
+							</div>
+							<div>
+								<label for="email" class="label">E-mail</label>
+								<input type="email" id="email" placeholder="Input your email">
+							</div>
+							<div>
+								<label for="birth" class="label">Date of Birth</label>
+								<select name="birthday" id="birth" class="birthday day"></select>
+								<select name="birthday" id="birth" class="birthday month"></select>
+								<select name="birthday" id="birth" class="birthday year"></select>
+							</div>
+							<div>
+								<label class="label">Gender</label>
+								<div>
+									<input type="radio" id="male" name="gender" class="radio">
+									<label for="male">Male</label>
+									<input type="radio" id="female" name="gender" class="radio">
+									<label for="female">Female</label>
+								</div>
+							</div>
+							<div>
+								<input type="password" id="password" placeholder="Password">
+							</div>
+							<div>
+								<input type="password" id="password" placeholder="Confirm password">
+							</div>
+						</form>
+					</div>
+					<div class="registr-block__footer">
+						<span>Have an account? <a href="/">Login</a></span>
+						<input type="submit" value="Complete Signup" class="ptFontStyle submitBtn">
+					</div>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
