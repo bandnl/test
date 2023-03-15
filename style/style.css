@@ -24,16 +24,6 @@
 		transform: translateX(0);
 	}
 }
-/* key-frames for element occurrence animation */
-@keyframes showElement {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
 
 * {
 	margin: 0;

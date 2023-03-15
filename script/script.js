@@ -12,11 +12,10 @@ const confirmPassword = document.getElementById('conf-password');
 const submitBtn = document.querySelector('.submitBtn');
 const form = document.querySelector('.regist-block__content');
 const registrBlock = document.querySelector('.registr-block__wrapper');
+const monthNames = [ "January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December" ];
 
-document.onload = () => {
-	checkValidMail(validMail);
-}
-
+document.onload = () => checkValidMail(validMail);
 day.addEventListener('focus', (ev) => console.log(ev));
 inputEmail.addEventListener('input', () => checkValidMail(validMail));
 password.addEventListener('input', checkPassword);
@@ -28,10 +27,6 @@ form.addEventListener('submit', (e) => {
 		e.preventDefault();
 	}
 })
-
-
-const monthNames = [ "January", "February", "March", "April", "May", "June",
-"July", "August", "September", "October", "November", "December" ];
 
 function showDays() {
 	for (let i = 1; i < 32; i++) {
