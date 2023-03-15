@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./style/normalize.css">
+		<link rel="stylesheet" href="./style/style.css">
+		<title>Sign up</title>
+	</head>
+	<body>
+		<main class="page">
+			<section class="page__info info">
+				<span class="info__title ptFontStyle">Sign up</span>
+			</section>
+			<section class="page__registr-block registr-block">
+				<div class="registr-block__wrapper">
+					<div class="registr-block__title title">
+						<span class="title__main bold">New user?</span>
+						<span class="title__additional">Use the form below to create your account.</span>
+					</div>
+					<div class="">
+						<form action="" class="regist-block__content">
+							<div class="flex-cont">
+								<div class="formElement">
+									<label for="first-name" class="label">First Name</label>
+									<input type="text" id="first-name" placeholder="Input your first name" class="input-inf name" required>
+								</div>
+								<div class="formElement">
+									<label for="last-name" class="label">Last Name</label>
+									<input type="text" id="last-name" placeholder="Input your last name" class="input-inf name" required>
+								</div>
+							</div>
+							<div class="flex-cont">
+								<div class="formElement">
+									<label for="nation" class="label">Nationality</label>
+									<select name="nation" id="nation" class="input-inf nationality select">
+										<option value="american">American</option>
+										<option value="bel">Belarus</option>
+										<option value="rus">Russian</option>
+										<option value="ukr">Ukranian</option>
+									</select>
+								</div>
+								<div class="email-cont formElement">
+									<label for="email" class="label">E-mail</label>
+									<input type="email" id="email" placeholder="Input your email" class="email input-inf" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" required>
+								</div>
+							</div>
+							<div class="flex-cont">
+								<div class="formElement">
+									<label for="birth" class="label">Date of Birth</label>
+									<div class="birth__cont">
+										<select name="birthday" id="day" class="birthday day input-inf select"></select>
+										<select name="birthday" id="month" class="birthday month input-inf select"></select>
+										<select name="birthday" id="year" class="birthday year input-inf select"></select>
+									</div>
+								</div>
+								<div class="formElement">
+									<label class="label">Gender</label>
+									<div>
+										<input type="radio" id="male" name="gender" class="radio" required>
+										<label for="male" class="input-inf gender_male">Male</label>
+										<input type="radio" id="female" name="gender" class="radio" required>
+										<label for="female" class="input-inf">Female</label>
+									</div>
+								</div>
+							</div>
+							<div class="flex-cont">
+								<div class="formElement">
+									<label for="password" class="label">Password</label>
+									<input type="password" id="password" class="input-inf password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+								</div>
+								<div class="formElement">
+									<label for="conf-password" class="label">Confirm Password</label>
+									<input type="password" id="conf-password" class="input-inf password" required>
+								</div>
+							</div>
+							<div class="registr-block__footer">
+								<span class="footer__title">Have an account? <a href="/">Login</a></span>
+								<input type="submit" value="Complete Signup" class="ptFontStyle submitBtn">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./script/script.js"></script>
+	</body>
+</html>
